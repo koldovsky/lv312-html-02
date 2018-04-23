@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Sample</title>
+</head>
+<body>
+    <header>
+        <h1>Sample HTML page</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Some video</h2>
+            <iframe style="border:0" width="560" height="315" src="https://www.youtube.com/embed/TORSuS3jjn0" allowfullscreen></iframe>
+        </article>
+        <article>
+            <h2>Table sample</h2>
+            <table border>
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <th></th><th>Product 1</th><th>Product 2</th><th>Product 3</th>
+                        <th rowspan="5">Summary</th>
+                    </tr>
+                    <tr>
+                        <th>Quarter I</th><td>1</td><td>2</td><td>3</td>
+                    </tr>
+                    <tr>
+                        <th>Quarter II</th><td>4</td><td>5</td><td>6</td>
+                    </tr>
+                    <tr>
+                        <th>Quarter III</th><td>7</td><td>8</td><td>9</td>
+                    </tr>
+                    <tr>
+                        <th>Total</th><td colspan="3">X</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </article>
+        <article>
+            <h2>Lists</h2>
+            <ul>
+               <li>Item 1</li> 
+               <li>Item 2</li> 
+               <li>Item 3</li> 
+            </ul>
+            <ol type="A" start="3" reversed>
+               <li>Item 1</li> 
+               <li>Item 2</li> 
+               <li>Item 3</li>                 
+            </ol>
+        </article>
+        <atricle>
+            <h2>Form</h2>
+            <!-- Method GET: form.php?name=Jon&email=jon@wall.com -->
+            <!-- Method POST: form.php -->
+            <form method="post" action="https://formspree.io/YOUR-EMAIL-HERE">
+                <label for="client-name">Name:</label>
+                <input id="client-name" type="text" placeholder="Name"
+                 name="client-name" required>
+                <br> 
+                <label>Email:
+                    <input type="email" name="client-email"
+                      placeholder="Email" required>    
+                </label>
+                <br>
+                <label>Your passport:
+                    <input type="text" placeholder="AA012345"
+                     required pattern="[A-Z]{2}[\d]{6}"
+                     title="AA012345"
+                </label>
+                <br>
+                <label>Your gender</label>
+                <label>
+                    <input type="radio" name="gender" value="male" checked> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female"> Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="other"> Other
+                </label>
+                <br>
+                <input type="submit" value="SEND">
+                <input type="reset" value="CLEAR">
+            </form>
+        </atricle>
+    </main>
+    <footer>
+        <p>Some footer text</p>
+    </footer>
+
+
+</body>
+</html>
