@@ -53,7 +53,7 @@
                <li>Item 3</li>                 
             </ol>
         </article>
-        <atricle>
+        <article>
             <h2>Form</h2>
             <!-- Method GET: form.php?name=Jon&email=jon@wall.com -->
             <!-- Method POST: form.php -->
@@ -70,7 +70,7 @@
                 <label>Your passport:
                     <input type="text" placeholder="AA012345"
                      required pattern="[A-Z]{2}[\d]{6}"
-                     title="AA012345"
+                     title="AA012345">
                 </label>
                 <br>
                 <label>Your gender</label>
@@ -84,10 +84,12 @@
                     <input type="radio" name="gender" value="other"> Other
                 </label>
                 <br>
+                <input type="password">
+                <br>
                 <input type="submit" value="SEND">
                 <input type="reset" value="CLEAR">
             </form>
-        </atricle>
+        </article>
     </main>
     <footer>
         <p>Some footer text</p>
